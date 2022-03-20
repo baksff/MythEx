@@ -1,3 +1,3 @@
-# Welcome to my repository
-## :D
+Welcome users to my repository
+
 # Created by baksff#9674

@@ -174,8 +174,8 @@ function module:ESP()
                     Tracer.Visible = false
                 end
             else
-                Box.Visible = false
-                Tracer.Visible = false
+                Box.Visible = true
+                Tracer.Visible = true
                 if not plrs:FindFirstChild(pl) then
                     plrsToUPD[_] = nil
                 end

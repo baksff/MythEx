@@ -2,13 +2,12 @@ local Module = {}
 local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
 -- Function 
-function webhook(hook, color, title, description, footer)
+function webhook(hook, color, title, description)
     pcall(function()
         local Embed = {
             color = color,
             title = title,
-            description = description,
-            footer = footer
+            description = description
         };
 
         (syn and syn.request or http_request) {
@@ -89,7 +88,7 @@ function Module:CreateWindow(Url)
     ReportButton.TextStrokeTransparency = 0.500
     ReportButton.TextWrapped = true
     ReportButton.MouseButton1Down:connect(function()
-        webhook(Url, 0xFF0000, 'Bug Report', Report.Text, GameName)
+        webhook(Url, 0xFF0000, 'Report from '..GameName, Report.Text,)
         wait(1)
         BugReporter:Destroy()
     end)

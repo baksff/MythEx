@@ -1,4 +1,5 @@
 local Module = {}
+local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
 -- Function 
 function webhook(hook, color, title, description, footer)
@@ -26,7 +27,6 @@ end
 
 -- User Interface
 function Module:CreateWindow(Url)
-    local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
     local BugReporter = Instance.new('ScreenGui')
     local Holder = Instance.new('Frame')
     local Report = Instance.new('TextBox')
@@ -89,7 +89,7 @@ function Module:CreateWindow(Url)
     ReportButton.TextStrokeTransparency = 0.500
     ReportButton.TextWrapped = true
     ReportButton.MouseButton1Down:connect(function()
-        webhook(Url, 0xFF0000, 'Bug Report', Report.Text, 'from '..GameName)
+        webhook(Url, 0xFF0000, 'Bug Report', Report.Text, GameName)
         wait(1)
         BugReporter:Destroy()
     end)

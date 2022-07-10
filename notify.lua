@@ -40,6 +40,7 @@ function myth:SendNotify(title2, timee, text)
     desc.TextSize = 20.000
     desc.TextWrapped = true
 
+    wait(1)
     Frame:TweenPosition(UDim2.new(0.834, 0, 0.868, 0))
     wait(timee)
     Frame:TweenPosition(UDim2.new(0.834, 0, 1, 1))

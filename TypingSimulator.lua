@@ -1,3 +1,4 @@
+-- moonsec is shit, he broke my script :/
 getgenv().autotap = false
 getgenv().autosell = false
 getgenv().autodevices = false

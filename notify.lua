@@ -1,5 +1,4 @@
--- i'ts bad, dont use it
-
+-- it's poorly done, don't use it
 local myth = {}
 
 function myth:SendNotify(title2, timee, text)

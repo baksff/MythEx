@@ -1,7 +1,7 @@
 --[[ 
 made by baksff#9674
 $
-moonsec is shit, he broke my script :/
+moonsec is shit, he broke my script :(
 $
 don't pass off my script as your own, pls
 ]]--
